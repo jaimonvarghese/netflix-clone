@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:netflx_clone/core/constants/constants.dart';
 import 'package:netflx_clone/presentation/searh/widgets/search_idle.dart';
+import 'package:netflx_clone/presentation/searh/widgets/search_result.dart';
 
 class SearchScreen extends StatelessWidget {
   const SearchScreen({super.key});
@@ -24,7 +25,8 @@ class SearchScreen extends StatelessWidget {
                 style: TextStyle(color: Colors.white),
               ),
               kHeight10,
-              Expanded(child: SearchIdle()),
+             // Expanded(child: SearchIdle()),
+             Expanded(child: SearchResult()),
             ],
           ),
         ),
