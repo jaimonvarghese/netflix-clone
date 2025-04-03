@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:netflx_clone/core/colors/colors.dart';
 import 'package:netflx_clone/core/constants/constants.dart';
 import 'package:netflx_clone/presentation/home/widgets/custom_button_widget.dart';
+import 'package:netflx_clone/presentation/new_and_hot/widgets/video_widget.dart';
 
 class ComingSoonItemWidget extends StatelessWidget {
   const ComingSoonItemWidget({
@@ -42,34 +43,7 @@ class ComingSoonItemWidget extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Stack(
-                children: [
-                  SizedBox(
-                    width: double.infinity,
-                    height: 200,
-                    child: Image.network(
-                      'https://media.themoviedb.org/t/p/w500_and_h282_face/2Nti3gYAX513wvhp8IiLL6ZDyOm.jpg',
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                  Positioned(
-                    bottom: 0,
-                    right: 10,
-                    child: CircleAvatar(
-                      radius: 25,
-                      backgroundColor: Colors.black.withOpacity(0.5),
-                      child: IconButton(
-                        onPressed: () {},
-                        icon: Icon(
-                          Icons.volume_off,
-                          color: kWhileColor,
-                          size: 25,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+              VideoWidget(),
               Row(
                 children: [
                   Text(
