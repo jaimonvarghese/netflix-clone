@@ -10,7 +10,7 @@ class MainCard extends StatelessWidget {
         color: Colors.red,
         borderRadius: BorderRadius.circular(7),
         image: DecorationImage(
-          
+          fit: BoxFit.cover,
           image: NetworkImage(
             'https://media.themoviedb.org/t/p/w600_and_h900_bestv2/1TZ9Er1xEAKizzKKqYVgJIhNkN2.jpg',
           ),
